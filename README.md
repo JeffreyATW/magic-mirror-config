@@ -12,6 +12,30 @@ I installed MagicMirror² on a [Raspberry Pi 3B+](https://www.raspberrypi.com/pr
 
 ## Software setup
 
+### System configuration
+
+I modified the Raspberry Pi's `/boot/config.txt` file to rotate the display, adding this line:
+
+```
+display_rotate=3
+```
+
+I also modified the cron scheduler (via `crontab -e`) to put the display to sleep at 9 PM and wake it at 6:30 AM:
+
+```
+30 6 * * * DISPLAY=:0 xset -dpms
+0 21 * * * DISPLAY=:0 xset dpms force off
+```
+
+I also added these lines to `/etc/xdg/lxsession/LXDE/autostart` to prevent the display from sleeping on its own:
+
+```
+@xset s noblank
+@xset s off
+```
+
+### MagicMirror configuration
+
 I'm running the latest version of [MagicMirror²](https://github.com/MichMich/MagicMirror). The custom modules I have installed are [`MMM-CalendarExt2`](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2) and [`MMM-GooglePhotos`](https://github.com/aneaville/MMM-GooglePhotos). See each page for installation. The most difficult part was authenticating with Google Photos to access my albums.
 
 If you'd like to use this repository's files, install the above custom modules, and copy `config/config.js` and `css/custom.css` into your MagicMirror² checkout. You'll find some notes in each file, suffixed with `- JeffreyATW`, where you'll have to enter some of your own info.
