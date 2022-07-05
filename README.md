@@ -8,7 +8,7 @@ Here's what it looks like in real life. The background image changes every minut
 
 ## Hardware setup
 
-I installed MagicMirror² on a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/). It's connected via this [low profile cable](https://www.amazon.com/gp/product/B07RL574BB) to an [Acer S271HL](https://g.co/kgs/Ay74Qs) (although any monitor with a VESA mounting interface will do - it's just what I had lying around) using this [slim mount](https://www.amazon.com/gp/product/B00QOQAHNE).
+I installed MagicMirror² on a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/). It's connected via this [low profile cable](https://www.amazon.com/gp/product/B07RL574BB) to an [Acer S271HL](https://g.co/kgs/Ay74Qs) (although any monitor with a VESA mounting interface will do - it's just what I had lying around) using this [slim mount](https://www.amazon.com/gp/product/B00QOQAHNE). I attached the Pi, adapters, and power cables to the back of the monitor using velcro tape. (The Pi's included power adapter is too large to fit comfortably behind the monitor but I found that a 12W iPad adapter and a good micro USB cable did the trick.)
 
 ## Software setup
 
