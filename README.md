@@ -34,6 +34,8 @@ I also added these lines to `/etc/xdg/lxsession/LXDE/autostart` to prevent the d
 @xset s off
 ```
 
+For ease of configuration, I've enabled both SSH and VNC (via `sudo raspi-config`).
+
 ### MagicMirror configuration
 
 I'm running the latest version of [MagicMirror²](https://github.com/MichMich/MagicMirror). The custom modules I have installed are [`MMM-CalendarExt2`](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2) and [`MMM-GooglePhotos`](https://github.com/aneaville/MMM-GooglePhotos). See each page for installation. The most difficult part was authenticating with Google Photos to access my albums.
