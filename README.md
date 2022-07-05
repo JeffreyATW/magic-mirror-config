@@ -34,7 +34,7 @@ I also added these lines to `/etc/xdg/lxsession/LXDE/autostart` to prevent the d
 @xset s off
 ```
 
-For ease of configuration, I've enabled both SSH and VNC (via `sudo raspi-config`).
+For ease of configuration, I've enabled both SSH and VNC (via `raspi-config`).
 
 ### MagicMirror configuration
 
