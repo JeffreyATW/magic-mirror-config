@@ -1,5 +1,10 @@
 This is a repository of my custom config and CSS files for [MagicMirror²](https://github.com/MichMich/MagicMirror).
 
+<figure>
+![54FFF552-168C-47AA-A7F5-6268010F0C68_1_105_c](https://user-images.githubusercontent.com/266170/177386446-ffdcddcf-0b28-422f-8434-16699e846f32.jpeg)
+<figcaption>Here's what my installation looks like</figcaption>
+</figure>
+
 The custom modules I have installed are [`MMM-CalendarExt2`](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2) and [`MMM-GooglePhotos`](https://github.com/aneaville/MMM-GooglePhotos).
 
 If you'd like to use these files, install the above custom modules, and copy `config/config.js` and `css/custom.css` into your MagicMirror checkout. You'll find some notes in each file, suffixed with `- JeffreyATW`, where you'll have to enter some of your own info.
