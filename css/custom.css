@@ -1,0 +1,189 @@
+/* MagicMirror² Custom CSS Sample
+ *
+ * Change color and fonts here.
+ *
+ * Beware that properties cannot be unitless, so for example write '--gap-body: 0px;' instead of just '--gap-body: 0;'
+ *
+ * MIT Licensed.
+ */
+
+/* Uncomment and adjust accordingly if you want to import another font from the google-fonts-api: */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap'); */
+
+:root {
+  --color-text: #999;
+  --color-text-dimmed: #666;
+  --color-text-bright: #fff;
+  --color-background: black;
+
+  --font-primary: "Roboto Condensed";
+  --font-secondary: "Roboto";
+  
+  --font-size: 20px;
+  --font-size-small: 0.75rem;
+
+  --gap-body-top: 60px;
+  --gap-body-right: 60px;
+  --gap-body-bottom: 60px;
+  --gap-body-left: 60px;
+  
+  --gap-modules: 30px;
+}
+
+
+.CX2 {
+  --column-min-width: auto;
+  --column-max-width: auto;
+  --font-size: 38px;
+
+  margin-top: 150px;
+
+  /* disables fade when updating */
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+.CX2 .module-content {
+  font-family: inherit;
+}
+
+.CX2 .view.daily.column {
+  flex-wrap: wrap;
+  max-height: 1400px;
+  overflow-x: hidden;
+}
+
+.CX2 .slot .slotHeader {
+  background: transparent;
+  border-color: var(--color-text);
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  color: var(--color-text);
+  height: auto;
+  font-weight: normal;
+  padding-top: 0;
+}
+
+.CX2 .slot .slotHeader * {  
+  font-size: 0.75em;
+  line-height: initial;
+}
+
+.CX2 .slot > .slotContent {
+  background: none;
+}
+
+.CX2 .slot.today .slotHeader {
+  border-color: var(--color-text-bright);
+}
+
+.CX2 .slot.today .slotHeader * {
+  color: var(--color-text-bright);
+}
+
+.CX2 .slot.today .event:not(.passed) .eventTitle {
+  font-size: 1.5em;
+}
+
+.CX2 .event, .CX2 .event.fullday {
+  background: transparent;
+}
+
+.CX2 .event.fullday {
+  border-radius: inherit;
+  color: inherit;
+}
+
+.CX2 .eventMain {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.CX2 .eventMain > * {
+  line-height: 1.25;
+}
+
+.CX2 .eventMain > * * {
+  line-height: unset;
+}
+
+.CX2 .period .eventTitle {
+  font-weight: normal;
+  overflow: visible;
+  white-space: initial;
+}
+
+.CX2 .period .eventTitle::before {
+  content: "";
+  display: inline-block;
+  height: 0.75em;
+  margin-right: .333em;
+  position: relative;
+  top: -0.1em;
+  vertical-align: middle;
+  width: 0.75em;
+}
+
+/* These are custom colors for each calendar. Feel free to change them to match yours. - JeffreyATW */
+
+.CX2 .event[data-calendar-name="0"] .eventTitle::before {
+  background-color: rgb(244, 81, 30);
+}
+
+.CX2 .event[data-calendar-name="1"] .eventTitle::before {
+  background-color: rgb(11, 128, 67);
+}
+
+.CX2 .event[data-calendar-name="2"] .eventTitle::before {
+  background-color: rgb(3, 155, 229);
+}
+
+.CX2 .event[data-calendar-name="3"] .eventTitle::before {
+  background-color: rgb(158, 105, 175);
+}
+
+.CX2 .event[data-calendar-name="1"] .eventTime {
+  display: none;
+}
+
+.CX2 .period .eventTime {
+  color: var(--color-text);
+  white-space: nowrap;
+}
+
+.CX2 .period.daily .event.fullday.oneday .startDate {
+  display: none;
+}
+
+.CX2 .period .event.passed::before {
+  display: none;
+}
+
+.CX2 .period .event.passed .eventTitle {
+  color: var(--color-text);
+}
+
+.CX2 .period .event.passed .eventTime {
+  color: var(--color-text-dimmed);
+}
+
+#GPHOTO {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#GPHOTO_BACK {
+  filter: brightness(20%);
+}
+
+#GPHOTO_CURRENT {
+  display: none;
+}
+
+#GPHOTO_INFO {
+	display:none;
+}
+
