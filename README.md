@@ -2,6 +2,8 @@ This is a repository of my custom config and CSS files for [MagicMirror²](https
 
 The custom modules I have installed are [`MMM-CalendarExt2`](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2) and [`MMM-GooglePhotos`](https://github.com/aneaville/MMM-GooglePhotos).
 
+If you'd like to use these files, install the above custom modules, and copy `config/config.js` and `css/custom.css` into your MagicMirror checkout. You'll find some notes in each file, suffixed with `- JeffreyATW`, where you'll have to enter some of your own info.
+
 I made a slight change to `MMM-CalendarExt2` to disable fade-out and fade-in when the calendar refreshes. If you'd like to make the same change, here's the diff:
 
 ```diff
