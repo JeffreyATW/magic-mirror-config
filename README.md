@@ -1,6 +1,6 @@
 # MagicMirror² config files
 
-This is a repository of my custom config and CSS files for [MagicMirror²](https://github.com/MichMich/MagicMirror).
+This is a repository of my custom config and CSS files for my [MagicMirror²](https://github.com/MichMich/MagicMirror) kitchen installation.
 
 Here's what it looks like in real life. The background image changes every minute:
 
