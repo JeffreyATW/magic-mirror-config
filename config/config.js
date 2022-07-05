@@ -100,7 +100,7 @@ timeFormat: "h:mm A"
 				type: "current",
 				location: "Berkeley",
 				locationID: "5327684", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "163a997366e3416ce51615393acb4d2f"
+				apiKey: "" // INSERT YOUR OWN API KEY HERE! - JeffreyATW
 			}
 		},
 		{
@@ -112,7 +112,7 @@ timeFormat: "h:mm A"
 				type: "forecast",
 				location: "Berkeley",
 				locationID: "5327684", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-				apiKey: "163a997366e3416ce51615393acb4d2f"
+				apiKey: "" // INSERT YOUR OWN API KEY HERE! - JeffreyATW
 			}
 		},
 		{
