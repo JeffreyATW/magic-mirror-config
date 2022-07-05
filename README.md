@@ -1,10 +1,20 @@
-This is a repository of my custom config and CSS files for [MagicMirror²](https://github.com/MichMich/MagicMirror). Here's what it looks like in real life:
+# MagicMirror² config files
+
+This is a repository of my custom config and CSS files for [MagicMirror²](https://github.com/MichMich/MagicMirror).
+
+Here's what it looks like in real life. The background image changes every minute:
 
 ![54FFF552-168C-47AA-A7F5-6268010F0C68_1_105_c](https://user-images.githubusercontent.com/266170/177386446-ffdcddcf-0b28-422f-8434-16699e846f32.jpeg)
 
-The custom modules I have installed are [`MMM-CalendarExt2`](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2) and [`MMM-GooglePhotos`](https://github.com/aneaville/MMM-GooglePhotos).
+## Hardware setup
 
-If you'd like to use these files, install the above custom modules, and copy `config/config.js` and `css/custom.css` into your MagicMirror checkout. You'll find some notes in each file, suffixed with `- JeffreyATW`, where you'll have to enter some of your own info.
+I installed MagicMirror² on a [Raspberry Pi 3B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/). It's connected via this [low profile cable](https://www.amazon.com/gp/product/B07RL574BB) to an [Acer S271HL](https://g.co/kgs/Ay74Qs) (although any monitor with a VESA mounting interface will do - it's just what I had lying around) using this [slim mount](https://www.amazon.com/gp/product/B00QOQAHNE).
+
+## Software setup
+
+I'm running the latest version of [MagicMirror²](https://github.com/MichMich/MagicMirror). The custom modules I have installed are [`MMM-CalendarExt2`](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2) and [`MMM-GooglePhotos`](https://github.com/aneaville/MMM-GooglePhotos). See each page for installation. The most difficult part was authenticating with Google Photos to access my albums.
+
+If you'd like to use these files, install the above custom modules, and copy `config/config.js` and `css/custom.css` into your MagicMirror² checkout. You'll find some notes in each file, suffixed with `- JeffreyATW`, where you'll have to enter some of your own info.
 
 I made a slight change to `MMM-CalendarExt2` to disable fade-out and fade-in when the calendar refreshes. If you'd like to make the same change, here's the diff:
 
