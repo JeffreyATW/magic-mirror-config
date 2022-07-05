@@ -1,4 +1,4 @@
-This is a repository of my custom config and CSS files for MagicMirror.
+This is a repository of my custom config and CSS files for [MagicMirror²](https://github.com/MichMich/MagicMirror).
 
 The custom modules I have installed are [`MMM-CalendarExt2`](https://github.com/MMM-CalendarExt2/MMM-CalendarExt2) and [`MMM-GooglePhotos`](https://github.com/aneaville/MMM-GooglePhotos).
 
